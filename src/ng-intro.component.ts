@@ -68,7 +68,7 @@ namespace ngIntroJs {
 	} else {
 		root.angularIntroJs = factory(root.angular, root.introJs);
 	}
-}(this, function (angular: ng.IAngularStatic, introJs: IntroJs.Factory) {
+}(<any>window, function (angular: ng.IAngularStatic, introJs: IntroJs.Factory) {
 
 	let introStatus = { // i wanted to use enums, but for now it"ll work
 		open: "open",
